@@ -8,7 +8,7 @@ and !fliping and !state and !obj_game.trava{
 
 if fliping = 1{
 	
-	scale = abs(image_xscale)/6
+	scale_x = abs(image_xscale)/6
 	
 	if image_xscale = 0 state_img *= -1	
 	
@@ -18,8 +18,9 @@ if fliping = 1{
 	if image_xscale = state {
 		fliping = 0
 		state *= -1	
-		scale = .16
+		scale_x = i_scale_x
 	}
 	
 }
 
+card_hover()
