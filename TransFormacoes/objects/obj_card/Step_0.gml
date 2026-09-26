@@ -1,0 +1,25 @@
+if mouse_check_button_pressed(mb_left) and place_meeting(x, y, obj_cursor) 
+and !fliping and !state and !obj_game.trava{
+
+	fliping = 1
+	array_push(global.fliped, {numero: n, inst: id})
+	
+}
+
+if fliping = 1{
+	
+	scale = abs(image_xscale)/6
+	
+	if image_xscale = 0 state_img *= -1	
+	
+	if image_xscale > state image_xscale -= .1
+	else if image_xscale < state image_xscale += .1
+	
+	if image_xscale = state {
+		fliping = 0
+		state *= -1	
+		scale = .16
+	}
+	
+}
+
