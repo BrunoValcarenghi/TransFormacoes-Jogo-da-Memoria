@@ -1,12 +1,16 @@
 function card_hover(){
 
-	if place_meeting(x, y, obj_cursor) and !fliping and !obj_game.trava and !state{
+	if place_meeting(x, y, obj_cursor) 
+	and !fliping 
+	and !obj_game.trava
+	and !state
+	and global.turno{
 	
-		scale_x = .17
-		scale_y = .17
+		scale_x = i_scale_x * 1.03
+		scale_y = i_scale_y * 1.03
 		
-		image_xscale = 1.1
-		image_yscale = 1.1
+		image_xscale = 1.03
+		image_yscale = 1.03
 	
 	}
 	else if image_yscale > 1{
