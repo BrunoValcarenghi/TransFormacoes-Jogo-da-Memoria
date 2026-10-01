@@ -5,10 +5,12 @@ if array_length(global.fliped) >= 2 and !trava{
 	
 }
 
-if !global.turno and jogada_cpu = 0{
-
-	jogada_cpu = 1
-	alarm[1] = 60
+if !global.turno{
+	
+	if jogada_cpu = 0 and global.modo = 0{
+		jogada_cpu = 1
+		alarm[1] = 60
+	}
 
 }
 
@@ -17,5 +19,6 @@ if keyboard_check_pressed(ord("F")) {
 }
 
 if keyboard_check_pressed(ord("R")) {
+	global.fliped = []
     game_restart()
 }

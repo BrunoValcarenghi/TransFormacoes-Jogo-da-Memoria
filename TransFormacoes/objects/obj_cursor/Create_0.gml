@@ -1,3 +1,4 @@
+depth = -100
 scale = .5
 
 image_xscale = scale

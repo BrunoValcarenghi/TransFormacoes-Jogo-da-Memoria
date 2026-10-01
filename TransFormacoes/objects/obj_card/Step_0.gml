@@ -1,8 +1,10 @@
 if mouse_check_button_pressed(mb_left) and place_meeting(x, y, obj_cursor) 
-and !fliping and !state and !obj_game.trava and global.turno{
+and !fliping and !state and !obj_game.trava{
 
-	fliping = 1
-	array_push(global.fliped, {numero: n, inst: id})
+	if (global.modo = 0 and global.turno) or global.modo != 0{
+		fliping = 1
+		array_push(global.fliped, {numero: n, inst: id})
+	}
 	
 }
 
