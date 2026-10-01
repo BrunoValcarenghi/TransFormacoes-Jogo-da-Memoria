@@ -24,3 +24,22 @@ function card_hover(){
 	}
 
 }
+
+function button_hover(){
+
+
+	if place_meeting(x, y, obj_cursor){
+	
+		image_xscale = xscale + .2
+		image_yscale = yscale + .05
+	
+	}
+	else{
+
+		image_xscale = xscale
+		image_yscale = yscale
+	
+	}
+
+
+}

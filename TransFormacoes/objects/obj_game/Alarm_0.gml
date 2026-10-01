@@ -9,7 +9,7 @@ if global.fliped[0].numero != global.fliped[1].numero{
 }
 else{
 
-	placar[global.turno] ++
+	global.placar[global.turno] ++
 
 }
 

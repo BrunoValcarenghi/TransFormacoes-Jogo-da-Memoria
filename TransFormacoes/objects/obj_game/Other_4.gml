@@ -2,7 +2,10 @@ global.turno = 1
 jogada_cpu = 0
 trava = 0
 
-placar = [0, 0]
+global.cronometro = 0
+alarm[2] = 60
+
+global.placar = [0, 0]
 
 w = 5
 h = 4

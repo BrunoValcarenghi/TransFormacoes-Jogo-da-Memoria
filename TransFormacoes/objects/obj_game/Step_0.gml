@@ -22,3 +22,5 @@ if keyboard_check_pressed(ord("R")) {
 	global.fliped = []
     game_restart()
 }
+
+if global.placar[1] + global.placar[0] = 10 room_goto(rm_fim)
