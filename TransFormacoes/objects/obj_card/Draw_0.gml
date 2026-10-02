@@ -2,7 +2,7 @@ draw_self()
 
 draw_set_colour(c_white)
 
-if state_img = 1 img = global.card[n]
+if state_img = 1 img = global.card[n].spr
 else img = spr_logo
 
 draw_sprite_ext(img, 0, x,

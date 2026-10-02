@@ -4,6 +4,9 @@ and !fliping and !state and !obj_game.trava{
 	if (global.modo = 0 and global.turno) or global.modo != 0{
 		fliping = 1
 		array_push(global.fliped, {numero: n, inst: id})
+		
+		global.carta_mostrada[array_length(global.fliped) - 1] = global.card[n]
+		
 	}
 	
 }
@@ -18,6 +21,7 @@ if fliping = 1{
 	else if image_xscale < state image_xscale += .1
 	
 	if image_xscale = state {
+		play_audio_random(sfx_transition)
 		fliping = 0
 		state *= -1	
 		scale_x = i_scale_x

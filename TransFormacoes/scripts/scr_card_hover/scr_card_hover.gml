@@ -5,7 +5,9 @@ function card_hover(){
 	and !obj_game.trava
 	and !state
 	and global.turno{
-	
+		
+		if image_xscale = 1 play_audio_random(sfx_shoot)
+		
 		scale_x = i_scale_x * 1.03
 		scale_y = i_scale_y * 1.03
 		
@@ -14,7 +16,7 @@ function card_hover(){
 	
 	}
 	else if image_yscale > 1{
-	
+		
 		scale_x = i_scale_x
 		scale_y = i_scale_y
 		
@@ -29,7 +31,9 @@ function button_hover(){
 
 
 	if place_meeting(x, y, obj_cursor){
-	
+		
+		if image_xscale = xscale play_audio_random(sfx_shoot)
+		
 		image_xscale = xscale + .2
 		image_yscale = yscale + .05
 	
@@ -40,6 +44,5 @@ function button_hover(){
 		image_yscale = yscale
 	
 	}
-
 
 }

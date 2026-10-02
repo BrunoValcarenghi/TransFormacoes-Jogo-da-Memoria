@@ -7,6 +7,9 @@ alarm[2] = 60
 
 global.placar = [0, 0]
 
+global.carta_mostrada = [global.card[0], global.card[1]]
+global.fliped = []
+
 w = 5
 h = 4
 
@@ -24,7 +27,7 @@ for(var i = 0; i < w; i++){
 		
 		array_push(ja_foi, k)
 		
-		var _instancia = instance_create_layer(128 + 128 * i, 160 + 200 * j, "cards", obj_card, {n: k})
+		var _instancia = instance_create_layer(128 + 128 * i, 240 + 200 * j, "cards", obj_card, {n: k})
 		
 		array_push(cartas_instancias, _instancia)
 	}
