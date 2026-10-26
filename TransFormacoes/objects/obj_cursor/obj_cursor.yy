@@ -35,5 +35,5 @@
     "path":"sprites/spr_cursor/spr_cursor.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

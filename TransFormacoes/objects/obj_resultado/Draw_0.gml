@@ -1,6 +1,6 @@
 draw_set_font(f_fairplay)
 draw_set_colour(#fadbbf)
-draw_text(x, y - 200,  "PARABÉNS, VOCÊ COMPLETOU")
+draw_text(x, y - 200,  "PARABÉNS,\nVOCÊ COMPLETOU")
 
 var _minutos = floor(global.cronometro/60)
 var _segundos = global.cronometro - _minutos*60
@@ -12,7 +12,7 @@ else _zero = ""
 var _tempo = string_concat("Tempo para finalizar: ", _minutos, ":", _zero, _segundos)
 
 draw_set_font(f_poppins)
-draw_text(x, y-100, _tempo)
+//draw_text(x, y-100, _tempo)
 
 if global.modo != 2{
 	

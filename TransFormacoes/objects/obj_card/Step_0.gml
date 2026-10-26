@@ -1,4 +1,4 @@
-if mouse_check_button_pressed(mb_left) and place_meeting(x, y, obj_cursor) 
+if place_meeting(x, y, obj_cursor) 
 and !fliping and !state and !obj_game.trava{
 
 	if (global.modo = 0 and global.turno) or global.modo != 0{

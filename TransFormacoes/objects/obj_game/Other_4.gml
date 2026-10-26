@@ -27,7 +27,7 @@ for(var i = 0; i < w; i++){
 		
 		array_push(ja_foi, k)
 		
-		var _instancia = instance_create_layer(128 + 128 * i, 240 + 200 * j, "cards", obj_card, {n: k})
+		var _instancia = instance_create_layer(284 + 128 * i, 350 + 200 * j, "cards", obj_card, {n: k})
 		
 		array_push(cartas_instancias, _instancia)
 	}
