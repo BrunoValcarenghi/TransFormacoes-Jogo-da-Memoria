@@ -1,6 +1,7 @@
 global.turno = 1
 jogada_cpu = 0
 trava = 0
+alarm[3] = 10
 
 global.cronometro = 0
 alarm[2] = 60
