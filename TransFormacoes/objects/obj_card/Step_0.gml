@@ -1,14 +1,16 @@
-if place_meeting(x, y, obj_cursor) and obj_game.alarm[3] <= 0
-and !fliping and !state and !obj_game.trava{
+if toque_tela(){
+	if place_meeting(x, y, obj_cursor)
+	and !fliping and !state and !obj_game.trava{
 
-	if (global.modo = 0 and global.turno) or global.modo != 0{
-		fliping = 1
-		array_push(global.fliped, {numero: n, inst: id})
+		if (global.modo = 0 and global.turno) or global.modo != 0{
+			fliping = 1
+			array_push(global.fliped, {numero: n, inst: id})
 		
-		global.carta_mostrada[array_length(global.fliped) - 1] = global.card[n]
+			global.carta_mostrada[array_length(global.fliped) - 1] = global.card[n]
 		
-	}
+		}
 	
+	}
 }
 
 if fliping = 1{
